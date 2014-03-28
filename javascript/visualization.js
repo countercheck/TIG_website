@@ -29,7 +29,7 @@ function renderVisualization(matrix_json){
   svg.append("circle")
       .attr("r", innerRadius);
 
-  d3.csv("regions.csv", function(regionNames) {
+  d3.csv("csv/regions.csv", function(regionNames) {
     d3.json(matrix_json, function(matrix) {
 
       // Compute the chord layout.
@@ -199,8 +199,8 @@ function renderVisualization(matrix_json){
   });
   };
 
-  var friendship_matrix = "friendship_matrix.json",
-      inspiration_matrix = "inspiration_matrix.json",
+  var friendship_matrix = "json/friendship_matrix.json",
+      inspiration_matrix = "json/inspiration_matrix.json",
       friendship = true
 
     renderVisualization(friendship_matrix);
