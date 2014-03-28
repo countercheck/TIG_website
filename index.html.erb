@@ -1,0 +1,93 @@
+<section>
+  <div class=frame>
+  <header>
+    <div class="row">
+      <div class="large-8 columns">
+        <h3 id="title">TakingITGlobal Friendships & Inspirations</h3>
+      </div>
+      <div class="large-4 columns"><button id="friendship_or_inspiration">Display the inspiration visualization!</button></div>
+    </div>
+  </header>
+      <div class="row">
+        <div class="large-4 columns sidebar">
+          <ul>
+            <li>Click on a region to see who is friending who</li>
+            <li>Each region is connected with every other region. For example, region 'A' is connected to region 'B'.</li>
+            <li>The width of the chord where it touches region 'A' shows how many people from 'A' have friended 'B', and vis versa</li>
+            <li>The colour of the chord shows which region has sent more friendships</li>
+            <li>Mouseover to focus on connections to and from a given region</li>
+          </ul>
+            <table>
+                <tr>
+                  <th colspan = "3">
+                    <h3 id = "region_name"></h3>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Region</th>
+                  <th>To</th>
+                  <th >From</th>
+                </tr>
+                <tr id = 'r1'>
+                  <td class = 'name'>Africa</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r2'>
+                  <td class = 'name'>Asia</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r3'>
+                  <td class = 'name'>Oceania</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r4'>
+                  <td class = 'name'>Europe</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r5'>
+                  <td class = 'name'>North America</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r6'>
+                  <td class = 'name'>South America</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r7'>
+                  <td class = 'name'>Polar Regions</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r8'>
+                  <td class = 'name'>Central America and Caribbean</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+                <tr id = 'r9'>
+                  <td class = 'name'>Middle East and North Africa</td>
+                  <td class = "to"></td>
+                  <td class = "from"></td>
+                </tr>
+            </table>
+            <button id="toggle" class="button switch">Show #</button>
+
+        </div>
+
+        <div class="large-8 columns">
+        <h2 id="subtitle">Friendships sent and received</h2>
+
+          <div id="visualization">
+        
+          </div>
+      
+        </div>
+        
+      </div>
+    
+  </div>
+</section>

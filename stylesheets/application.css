@@ -1,0 +1,155 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+
+ *= require_tree .
+ */
+
+header{
+	background-color: dimgray;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+#title{
+	color: #ffffff;
+	letter-spacing: 1px;
+
+}
+
+.frame{
+	width: 100%;
+}
+
+.row {
+	max-width: 65rem;
+}
+
+.to {
+	width: 60px;
+}
+
+.from{
+	width: 60px;
+}
+
+.sidebar p{
+	font-size: 10px;
+}
+
+.button{
+	width: 100%;
+}
+
+#toggle{
+	width: 50%;
+}
+
+[class* = 'col']{
+	float: left;
+	
+}
+
+/*[class*='col']:last-of-type {
+  float: right;
+}*/
+
+.col1{ width: 100%;}
+.col2{ width: 66.66%;}
+.col3{ width: 33.33%;}
+
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*.table {
+	position: relative;
+	float: right;
+}*/
+
+#visualization {
+	position: relative;
+	float: left;
+  	padding-top: 25px;
+  	font-size: 12px;
+  	font-weight: bold;
+  	letter-spacing: 1px
+}
+
+.d3-tip {
+  line-height: 1;
+  font-size: 12px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  }
+
+  .d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: left;
+}
+
+
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  fade: 0.5;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+  display: none;
+}
+
+.arcs {
+  stroke: #000;
+  stroke-opacity: 0.5;
+}
+
+.group[title]:hover:after {
+  color: #ff0000;
+  font-size: 25px;
+}
+
+table{
+	width: 100%;
+}
+
+#region_name{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+	
+
+
+
