@@ -1,24 +1,39 @@
+/*CANVAS WIDTH*/
+
+.row {
+  max-width: 75rem;
+}
+
+/*HEADER*/
+
 header{
 	background-color: dimgray;
-	padding-top: 1em;
+	padding-top: 1.2em;
 	padding-bottom: 1em;
 	margin-bottom: 3.5em;
 }
-
 
 #title{
 	color: #ffffff;
 	letter-spacing: 1px;
   font-size: 1.6875rem;
-
+  margin-top: 3em;
+  line-height: 3;
 }
 
-.frame{
-	width: 100%;
+#friendship_or_inspiration {
+  margin-top: 0.8em;
+  letter-spacing: 0.03em;
 }
 
-.row {
-	max-width: 65rem;
+/*SIDEBAR AND TABLE*/
+
+.sidebar p{
+  font-size: 10px;
+}
+
+table{
+  width: 100%;
 }
 
 .to {
@@ -29,50 +44,24 @@ header{
 	width: 60px;
 }
 
-.sidebar p{
-	font-size: 10px;
-}
-
-.button{
-	width: 100%;
-}
-
 #toggle{
 	width: 50%;
 }
 
-[class* = 'col']{
-	float: left;
-	
+/*VISUALIZATION*/
+
+#subtitle {
+  text-align: center;
+  font-weight: bold;
 }
-
-/*[class*='col']:last-of-type {
-  float: right;
-}*/
-
-.col1{ width: 100%;}
-.col2{ width: 66.66%;}
-.col3{ width: 33.33%;}
-
-/* Clearfix */
-.frame:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/*.table {
-	position: relative;
-	float: right;
-}*/
 
 #visualization {
 	position: relative;
 	float: left;
-  	padding-top: 25px;
-  	font-size: 12px;
-  	font-weight: bold;
-  	letter-spacing: 1px
+	padding-top: 25px;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px
 }
 
 .d3-tip {
@@ -124,14 +113,12 @@ path.chord {
   font-size: 25px;
 }
 
-table{
-	width: 100%;
-}
-
 #region_name{
 	font-size: 20px;
 	font-weight: bold;
 }
+
+
 
 
 
